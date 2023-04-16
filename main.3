@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a = 5, b = 10;
+    int *ptr_a = &a, *ptr_b = &b;
+
+    cout << "Before swapping: a = " << a << ", b = " << b << endl;
+
+    int temp = *ptr_a;
+    *ptr_a = *ptr_b;
+    *ptr_b = temp;
+
+    cout << "After swapping: a = " << a << ", b = " << b << endl;
+
+    return 0;
+}
